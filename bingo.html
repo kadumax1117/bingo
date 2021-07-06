@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BINGO GAME</title>
+    <link rel="stylesheet" href="/bingo.css">
+</head>
+
+<body>
+    <div id="flex1">
+        <div id="masu1"></div>
+        <div id="masu2"></div>
+        <div id="masu3"></div>
+        <div id="masu4"></div>
+        <div id="masu5"></div>
+    </div>
+
+    <div id="flex2">
+        <div id="masu6"></div>
+        <div id="masu7"></div>
+        <div id="masu8"></div>
+        <div id="masu9"></div>
+        <div id="masu10"></div>
+    </div>
+
+    <div id="flex3">
+        <div id="masu11"></div>
+        <div id="masu12"></div>
+        <div id="masu13">FREE</div>
+        <div id="masu14"></div>
+        <div id="masu15"></div>
+    </div>
+
+    <div id="flex4">
+        <div id="masu16"></div>
+        <div id="masu17"></div>
+        <div id="masu18"></div>
+        <div id="masu19"></div>
+        <div id="masu20"></div>
+    </div>
+
+    <div id="flex5">
+        <div id="masu21"></div>
+        <div id="masu22"></div>
+        <div id="masu23"></div>
+        <div id="masu24"></div>
+        <div id="masu25"></div>
+    </div>
+
+    <script>
+        function makeMasu (a, n){
+            document.getElementById(a).textContent = Math.floor(Math.random() * 20) + n;
+            document.getElementById(a).addEventListener("click", function () {
+            this.textContent = "〇";
+        })
+        }
+
+        makeMasu("masu1",1)
+        makeMasu("masu6",1)
+        makeMasu("masu11",1)
+        makeMasu("masu16",1)
+        makeMasu("masu21",1)
+        
+        makeMasu("masu2",20)
+        makeMasu("masu7",20)
+        makeMasu("masu12",20)
+        makeMasu("masu17",20)
+        makeMasu("masu22",20)
+
+        makeMasu("masu3",40)
+        makeMasu("masu8",40)
+        // masuFREE //
+        makeMasu("masu18",40)
+        makeMasu("masu23",40)
+
+        makeMasu("masu4",60)
+        makeMasu("masu9",60)
+        makeMasu("masu14",60)
+        makeMasu("masu19",60)
+        makeMasu("masu24",60)
+
+        makeMasu("masu5",79)
+        makeMasu("masu10",79)
+        makeMasu("masu15",79)
+        makeMasu("masu20",79)
+        makeMasu("masu25",79)
+
+        // document.getElementById("masu2").textContent = Math.floor(Math.random() * 20) + 20;
+        // document.getElementById("masu2").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+        // document.getElementById("masu7").textContent = Math.floor(Math.random() * 20) + 20;
+        // document.getElementById("masu7").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+        // document.getElementById("masu12").textContent = Math.floor(Math.random() * 20) + 20;
+        // document.getElementById("masu12").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+        // document.getElementById("masu17").textContent = Math.floor(Math.random() * 20) + 20;
+        // document.getElementById("masu17").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+        // document.getElementById("masu22").textContent = Math.floor(Math.random() * 20) + 20;
+        // document.getElementById("masu22").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+
+        // document.getElementById("masu3").textContent = Math.floor(Math.random() * 20) + 40;
+        // document.getElementById("masu3").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+        // document.getElementById("masu8").textContent = Math.floor(Math.random() * 20) + 40;
+        // document.getElementById("masu8").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+        // document.getElementById("masu13").textContent = "FREE"
+        // document.getElementById("masu18").textContent = Math.floor(Math.random() * 20) + 40;
+        // document.getElementById("masu18").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+        // document.getElementById("masu23").textContent = Math.floor(Math.random() * 20) + 40;
+        // document.getElementById("masu23").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+
+        // document.getElementById("masu4").textContent = Math.floor(Math.random() * 20) + 60;
+        // document.getElementById("masu4").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+        // document.getElementById("masu9").textContent = Math.floor(Math.random() * 20) + 60;
+        // document.getElementById("masu9").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+        // document.getElementById("masu14").textContent = Math.floor(Math.random() * 20) + 60;
+        // document.getElementById("masu14").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+        // document.getElementById("masu19").textContent = Math.floor(Math.random() * 20) + 60;
+        // document.getElementById("masu19").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+        // document.getElementById("masu24").textContent = Math.floor(Math.random() * 20) + 60;
+        // document.getElementById("masu24").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+
+        // document.getElementById("masu5").textContent = Math.floor(Math.random() * 20) + 79;
+        // document.getElementById("masu5").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+        // document.getElementById("masu10").textContent = Math.floor(Math.random() * 20) + 79;
+        // document.getElementById("masu10").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+        // document.getElementById("masu15").textContent = Math.floor(Math.random() * 20) + 79;
+        // document.getElementById("masu15").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+        // document.getElementById("masu20").textContent = Math.floor(Math.random() * 20) + 79;
+        // document.getElementById("masu20").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+        // document.getElementById("masu25").textContent = Math.floor(Math.random() * 20) + 79;
+        // document.getElementById("masu25").addEventListener("click", function () {
+        //     this.textContent = "〇";
+        // })
+    </script>
+</body>
+
+</html>
