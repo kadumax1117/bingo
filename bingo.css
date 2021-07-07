@@ -12,8 +12,10 @@
     font-size: 30px;
     border: 1px solid black;
     margin: 10px 0 0 10px;
-    background-color: aqua;
+    background-color: rgb(77, 73, 73);
+    color: white;
 }
 #masu13 {
-    font-size: 40px;
+    font-size: 30px;
 }
+
